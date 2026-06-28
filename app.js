@@ -589,6 +589,34 @@ function toggleBlueprint(view) {
     }
 }
 
+function toggleMobileMenu() {
+    const navLinks = document.getElementById('nav-links');
+    const menuBtn = document.getElementById('menu-toggle-btn');
+    navLinks.classList.toggle('active');
+    
+    // Toggle menu icon between bars and times
+    const icon = menuBtn.querySelector('i');
+    if (navLinks.classList.contains('active')) {
+        icon.className = 'fa-solid fa-times';
+    } else {
+        icon.className = 'fa-solid fa-bars';
+    }
+}
+
+// Close mobile menu when clicking any nav link
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.getElementById('nav-links');
+    const links = navLinks.querySelectorAll('a');
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            const menuBtn = document.getElementById('menu-toggle-btn');
+            const icon = menuBtn.querySelector('i');
+            icon.className = 'fa-solid fa-bars';
+        });
+    });
+});
+
 // Initialization on Page Load
 window.onload = function() {
     // Show first persona profile
