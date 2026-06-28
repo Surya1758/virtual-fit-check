@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialStitch AI - Interactive Case Study & Pitch Deck</title>
+    <!-- Modern Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient background glows -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-scissors"></i></span>
+            <span class="logo-text">Social<span>Stitch</span> AI</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#problem">The Sizing Crisis</a>
+            <a href="#proposed-solution">Our Solution</a>
+            <a href="#trial-room">Interactive Trial Room</a>
+            <a href="#financial-blueprint">Unit Economics</a>
+            <a href="#india-impact">India Impact</a>
+            <a href="#roadmap">Roadmap</a>
+        </nav>
+        <div class="header-cta">
+            <a href="#roi" class="btn btn-secondary">Get Estimate</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Pitch Section -->
+        <section class="hero-section">
+            <div class="container">
+                <span class="badge"><i class="fa-solid fa-sparkles"></i> Activating Fashion E-Commerce Growth</span>
+                <h1>Solving the Sizing Crisis in Fashion E-Commerce</h1>
+                <p class="hero-subtitle">
+                    An AI-driven approach to mitigating returns, stopping bracketing, and redefining the digital fitting room using 3D Parametric Fit Check & Generative UGC.
+                </p>
+                <div class="hero-actions">
+                    <a href="#trial-room" class="btn btn-primary">Open Virtual Trial Room</a>
+                    <a href="#roi" class="btn btn-glass"><i class="fa-solid fa-calculator"></i> Calculate ROI</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <h3>20% - 40%</h3>
+                        <p>Apparel Return Rates</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>₹120 - ₹250</h3>
+                        <p>Logistics Cost per Return (India)</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>51%</h3>
+                        <p>Gen Z Shoppers Who Bracket</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem & Impact Section -->
+        <section id="problem" class="section problem-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>The Sizing Crisis</h2>
+                    <p>The core friction points driving billions in e-commerce losses.</p>
+                </div>
+                
+                <div class="grid grid-2">
+                    <div class="problem-card card-gradient-border">
+                        <div class="card-icon"><i class="fa-solid fa-exclamation-triangle"></i></div>
+                        <h3>The Sizing & Fit Gap</h3>
+                        <p>
+                            Unlike retail shops, digital buyers can't touch or try on clothes. Static size charts vary wildly between brands (a Size 6 in one label is a Size 10 in another). This uncertainty stops conversion and damages trust.
+                        </p>
+                    </div>
+                    <div class="problem-card card-gradient-border">
+                        <div class="card-icon"><i class="fa-solid fa-boxes-packing"></i></div>
+                        <h3>The Bracketing Epidemic</h3>
+                        <p>
+                            Shoppers hedge risk by purchasing multiple sizes of the same item (e.g., Small, Medium, and Large) with the intent of keeping only the one that fits and sending the rest back, choking warehouse logistics.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="impact-metrics-box card-glass">
+                    <h3>The Toll of Returns</h3>
+                    <div class="grid grid-3">
+                        <div class="metric-item">
+                            <span class="metric-val">₹18 Lakh Cr</span>
+                            <span class="metric-label">Fashion Industry Return Cost (Global)</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-val">30-40%</span>
+                            <span class="metric-label">COD/RTO Rates in India & SEA</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-val">20-50%</span>
+                            <span class="metric-label">Garment Depreciation in Weeks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proposed Solution Description Section (Before Personas & Trial Room) -->
+        <section id="proposed-solution" class="section solution-intro-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>The Proposed Solution</h2>
+                    <p>How SocialStitch AI re-engineers e-commerce using two symbiotic core features.</p>
+                </div>
+
+                <div class="grid grid-2">
+                    <!-- Feature 1 Card -->
+                    <div class="solution-feature-card card-glass">
+                        <div class="feature-header">
+                            <span class="feature-number">01</span>
+                            <h3>Virtual Fit Check (VFC)</h3>
+                        </div>
+                        <p class="feature-tagline">Parametric Sizing & Tension Mapping</p>
+                        <p class="feature-desc">
+                            VFC is a 3D parametric simulation engine. It converts sparse user measurements or a single 2D photo into a dense 3D mannequin mesh (using the SMPL model). It calculates fabric drape and elasticity to generate a live <strong>Tension Map Heatmap</strong>, showing exactly where a garment is tight or loose.
+                        </p>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-check"></i> SMPL-backed volumetric 3D avatar reconstruction</li>
+                            <li><i class="fa-solid fa-check"></i> Live fabric stretch & stress calculations</li>
+                            <li><i class="fa-solid fa-check"></i> Red/Green/Blue color-coded tension heatmaps</li>
+                        </ul>
+                    </div>
+
+                    <!-- Feature 2 Card -->
+                    <div class="solution-feature-card card-glass">
+                        <div class="feature-header">
+                            <span class="feature-number">02</span>
+                            <h3>SocialStitch AI</h3>
+                        </div>
+                        <p class="feature-tagline">Generative Synthetic UGC Engine</p>
+                        <p class="feature-desc">
+                            To complement technical fit check with emotional validation, SocialStitch AI uses conditional diffusion pipelines (like IDM-VTON) to generate synthetic "Style Avatars" of diverse shapes and sizes wearing the items in lifestyle contexts, serving as localized social proof.
+                        </p>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid pointer fa-check"></i> SOTA two-stream conditional try-on diffusion</li>
+                            <li><i class="fa-solid fa-check"></i> Dynamic body-shape-matched model carousels</li>
+                            <li><i class="fa-solid fa-check"></i> Compliant, AI-watermarked synthetic influencers</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Core Innovation Banner -->
+                <div class="innovation-banner card-gradient-border">
+                    <div class="banner-content">
+                        <h3>Core Innovation: Zero-Click Size Selection</h3>
+                        <p>
+                            While the user browses the carousel, the backend computes the fit percentage across all sizes and <strong>pre-selects the optimal size</strong>. The user simply clicks "Add to Bag", bypassing the size selector entirely to eliminate decision drop-off.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Impressive Virtual Trial Room Section -->
+        <section id="trial-room" class="section trial-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Virtual Fitting Room Suite</h2>
+                    <p>Enter your exact metrics, select a garment type, and watch our parametric sizing calculations run in real-time.</p>
+                </div>
+
+                <div class="trial-suite card-glass">
+                    <!-- Left Sidebar: Garment Selector & Custom Body Measurements Inputs -->
+                    <div class="trial-inputs-panel">
+                        <div class="panel-section">
+                            <h4><span class="step-badge">1</span> Choose Garment Type</h4>
+                            <div class="garment-selectors">
+                                <div class="garment-card active" onclick="selectGarment('dress')">
+                                    <div class="garment-icon"><i class="fa-solid fa-person-dress"></i></div>
+                                    <span>Slim-Fit Dress</span>
+                                </div>
+                                <div class="garment-card" onclick="selectGarment('hoodie')">
+                                    <div class="garment-icon"><i class="fa-solid fa-shirt"></i></div>
+                                    <span>Oversized Hoodie</span>
+                                </div>
+                                <div class="garment-card" onclick="selectGarment('chinos')">
+                                    <div class="garment-icon"><i class="fa-solid fa-socks"></i></div>
+                                    <span>Tailored Pants</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel-section">
+                            <h4><span class="step-badge">2</span> Input Your Body Dimensions</h4>
+                            
+                            <div class="slider-group compact">
+                                <div class="slider-label">
+                                    <span>Height</span>
+                                    <span class="slider-value" id="val-body-height">165 cm</span>
+                                </div>
+                                <input type="range" id="input-body-height" min="140" max="200" value="165" oninput="updateBodyDimensions()">
+                            </div>
+
+                            <div class="slider-group compact">
+                                <div class="slider-label">
+                                    <span>Chest Size</span>
+                                    <span class="slider-value" id="val-body-chest">34 inches</span>
+                                </div>
+                                <input type="range" id="input-body-chest" min="28" max="50" value="34" oninput="updateBodyDimensions()">
+                            </div>
+
+                            <div class="slider-group compact">
+                                <div class="slider-label">
+                                    <span>Waist Size</span>
+                                    <span class="slider-value" id="val-body-waist">28 inches</span>
+                                </div>
+                                <input type="range" id="input-body-waist" min="22" max="48" value="28" oninput="updateBodyDimensions()">
+                            </div>
+
+                            <div class="slider-group compact">
+                                <div class="slider-label">
+                                    <span>Hip Size</span>
+                                    <span class="slider-value" id="val-body-hips">36 inches</span>
+                                </div>
+                                <input type="range" id="input-body-hips" min="30" max="52" value="36" oninput="updateBodyDimensions()">
+                            </div>
+
+                            <button class="btn btn-secondary btn-block" onclick="resetToAverage()">Reset to Averages</button>
+                        </div>
+                    </div>
+
+                    <!-- Center Panel: Live Mannequin & Fit Indicator -->
+                    <div class="trial-visualization-panel">
+                        <div class="visual-header">
+                            <h4>Live 3D Mannequin Fit</h4>
+                            <div class="toggle-container">
+                                <span>Tension Map Heatmap</span>
+                                <label class="switch">
+                                    <input type="checkbox" id="toggle-tension" checked onchange="toggleTensionView()">
+                                    <span class="slider-round"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mannequin-frame">
+                            <svg id="trial-mannequin" viewBox="0 0 200 400" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="gradient-mannequin" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#4f46e5" />
+                                        <stop offset="100%" stop-color="#1e1b4b" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Body Outline -->
+                                <circle cx="100" cy="50" r="20" fill="#1e1e2d" id="mannequin-head" />
+                                <rect x="94" y="70" width="12" height="15" fill="#1e1e2d" id="mannequin-neck" />
+                                <!-- Torso Path (Dynamic width based on variables) -->
+                                <path d="M 60,85 C 80,85 120,85 140,85 C 145,115 135,155 130,210 C 125,230 130,250 125,270 L 75,270 C 70,250 75,230 70,210 C 65,155 55,115 60,85 Z" 
+                                      id="mannequin-torso" 
+                                      fill="url(#gradient-mannequin)" 
+                                      style="transition: all 0.3s ease;" />
+                                <!-- Arms -->
+                                <path d="M 60,85 Q 40,140 45,200" stroke="#1e1e2d" stroke-width="12" stroke-linecap="round" fill="none" id="mannequin-l-arm" />
+                                <path d="M 140,85 Q 160,140 155,200" stroke="#1e1e2d" stroke-width="12" stroke-linecap="round" fill="none" id="mannequin-r-arm" />
+                                <!-- Legs -->
+                                <path d="M 80,270 Q 75,330 80,380" stroke="#1e1e2d" stroke-width="15" stroke-linecap="round" fill="none" id="mannequin-l-leg" />
+                                <path d="M 120,270 Q 125,330 120,380" stroke="#1e1e2d" stroke-width="15" stroke-linecap="round" fill="none" id="mannequin-r-leg" />
+
+                                <!-- Live Heatmap Zones (Tension Overlay) -->
+                                <path d="M 75,100 C 90,100 110,100 125,100 C 130,125 125,150 125,160 C 100,165 100,165 75,160 Z" 
+                                      id="zone-chest" 
+                                      fill="rgba(16, 185, 129, 0.4)" 
+                                      style="transition: all 0.3s ease; opacity: 1;" />
+                                <path d="M 75,175 C 90,175 110,175 125,175 C 128,200 122,220 125,240 L 75,240 C 78,220 72,200 75,175 Z" 
+                                      id="zone-hips" 
+                                      fill="rgba(16, 185, 129, 0.4)" 
+                                      style="transition: all 0.3s ease; opacity: 1;" />
+                            </svg>
+                            <div class="dynamic-fit-pill-box" id="trial-fit-pill">Best Fit: Medium (94% Match)</div>
+                        </div>
+                    </div>
+
+                    <!-- Right Sidebar: Fit Diagnostics, Size Selector & Cart Action -->
+                    <div class="trial-diagnostics-panel">
+                        <div class="garment-details">
+                            <span class="category-lbl">Current Garment</span>
+                            <h3 id="active-garment-name">Slim-Fit Dress</h3>
+                            <p class="product-price">₹9,999</p>
+                        </div>
+
+                        <div class="diagnostic-verdict card-gradient-border compact-card">
+                            <div class="verdict-header">
+                                <span>Garment Fit Verdict</span>
+                                <span class="verdict-status" id="verdict-status-txt">WILL FIT</span>
+                            </div>
+                            <div class="verdict-match" id="verdict-match-pct">94% Match Score</div>
+                            <p class="verdict-detail" id="verdict-detail-desc">Optimized fabric tension. Green heatmap zones verify comfortable drape across chest and waist.</p>
+                        </div>
+
+                        <div class="size-selection-suite">
+                            <label><i class="fa-solid fa-tags"></i> Test Alternative Sizes:</label>
+                            <div class="size-btn-group" id="trial-sizes-container">
+                                <!-- Sizes dynamically rendered by JS based on selected clothing -->
+                            </div>
+                        </div>
+
+                        <!-- Dimension breakdown table -->
+                        <div class="dimension-breakdown-box">
+                            <h5>Fit Metrics Comparison</h5>
+                            <table class="dimension-table">
+                                <thead>
+                                    <tr>
+                                        <th>Zone</th>
+                                        <th>Your Body</th>
+                                        <th>Clothing Size</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="dimension-table-body">
+                                    <!-- Dynamic rows from JS -->
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <button class="btn btn-primary btn-block" id="trial-add-to-cart" onclick="triggerTrialAddToCart()">
+                            <i class="fa-solid fa-bag-shopping"></i> Add Pre-Selected Size to Bag
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Clean Pipeline Visualization Section -->
+                <div class="ugc-pipeline-section card-glass margin-top-2">
+                    <div class="ugc-header">
+                        <h3><i class="fa-solid fa-wand-magic-sparkles"></i> How SocialStitch AI Generates Social Proof</h3>
+                        <p class="ugc-sub">Our diffusion pipeline takes your exact body dimensions and renders synthetic style models in under 4 seconds. Try changing your measurements above to trigger a live generation.</p>
+                    </div>
+
+                    <!-- 3-Step Pipeline Flow -->
+                    <div class="pipeline-flow">
+                        <div class="pipeline-step">
+                            <div class="pipeline-icon-box" style="--step-color: #6366f1;">
+                                <i class="fa-solid fa-person-rays"></i>
+                            </div>
+                            <h4>Body Shape Capture</h4>
+                            <p>Your height, chest, waist & hip measurements are encoded into a <strong>SMPL 3D mesh</strong>.</p>
+                            <div class="pipeline-data-tag" id="pipeline-tag-body">H: 165cm • C: 34" • W: 28" • H: 36"</div>
+                        </div>
+                        <div class="pipeline-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                        <div class="pipeline-step">
+                            <div class="pipeline-icon-box" style="--step-color: #a855f7;">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <h4>Diffusion Synthesis</h4>
+                            <p>IDM-VTON model warps the garment onto a <strong>body-matched avatar</strong> with fabric physics.</p>
+                            <div class="pipeline-data-tag" id="pipeline-tag-garment">Garment: Slim-Fit Silk Dress • Size M</div>
+                        </div>
+                        <div class="pipeline-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                        <div class="pipeline-step">
+                            <div class="pipeline-icon-box" style="--step-color: #06b6d4;">
+                                <i class="fa-solid fa-images"></i>
+                            </div>
+                            <h4>UGC Carousel Delivery</h4>
+                            <p>Multiple synthetic models with <strong>matching body shapes</strong> are injected into the product page.</p>
+                            <div class="pipeline-data-tag" id="pipeline-tag-output">Output: 3 style variants • 96% body overlap</div>
+                        </div>
+                    </div>
+
+                    <!-- Compact GPU Console -->
+                    <div class="compact-console">
+                        <div class="console-header-row">
+                            <div class="console-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="console-title">SocialStitch-GPU • IDM-VTON v2.1</span>
+                            <div class="gen-progress-inline">
+                                <span id="gen-status-text">IDLE</span>
+                                <div class="progress-bar-bg-inline">
+                                    <div class="progress-bar-fill-inline" id="progress-bar-fill" style="width: 100%;"></div>
+                                </div>
+                                <span id="gen-pct-text">100%</span>
+                            </div>
+                        </div>
+                        <div class="console-body">
+                            <div class="terminal-logs" id="terminal-logs">[SocialStitch-GPU] System Idle. Awaiting parameter trigger...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Personas Section (Shifted to after the Demo) -->
+        <section id="personas" class="section personas-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Target User Personas</h2>
+                    <p>Understanding the stakeholders suffering from return logistics and sizing gaps.</p>
+                </div>
+
+                <div class="persona-tabs-container">
+                    <div class="persona-tabs">
+                        <button class="tab-btn active" onclick="switchPersona(0)">
+                            <i class="fa-solid fa-shop"></i> The Brand Founder (Anjali)
+                        </button>
+                        <button class="tab-btn" onclick="switchPersona(1)">
+                            <i class="fa-solid fa-mobile-screen"></i> The Gen Z Bracketer (Liam)
+                        </button>
+                        <button class="tab-btn" onclick="switchPersona(2)">
+                            <i class="fa-solid fa-wallet"></i> The COD Shopper (Priya)
+                        </button>
+                    </div>
+
+                    <div class="persona-content-box card-glass">
+                        <div class="persona-tab-content active" id="persona-content">
+                            <!-- Persona dynamic content injected here by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business ROI Calculator Section -->
+        <section id="roi" class="section roi-calculator-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Business Impact Modeling</h2>
+                    <p>Plug in your brand's operational values to calculate your net savings and conversion revenue.</p>
+                </div>
+
+                <div class="grid grid-2">
+                    <!-- Sliders & Inputs -->
+                    <div class="calculator-inputs card-glass">
+                        <h3>E-Commerce Store Metrics</h3>
+                        
+                        <div class="slider-group">
+                            <div class="slider-label">
+                                <span>Monthly Orders</span>
+                                <span class="slider-value" id="val-orders">25,000</span>
+                            </div>
+                            <input type="range" id="input-orders" min="1000" max="100000" step="1000" value="25000" oninput="calculateROI()">
+                        </div>
+
+                        <div class="slider-group">
+                            <div class="slider-label">
+                                <span>Average Order Value (AOV)</span>
+                                <span class="slider-value" id="val-aov">₹1,500</span>
+                            </div>
+                            <input type="range" id="input-aov" min="500" max="15000" step="100" value="1500" oninput="calculateROI()">
+                        </div>
+
+                        <div class="slider-group">
+                            <div class="slider-label">
+                                <span>Current Return/RTO Rate</span>
+                                <span class="slider-value" id="val-return">28%</span>
+                            </div>
+                            <input type="range" id="input-return" min="5" max="50" step="1" value="28" oninput="calculateROI()">
+                        </div>
+
+                        <div class="slider-group">
+                            <div class="slider-label">
+                                <span>Logistics Cost per Return / RTO</span>
+                                <span class="slider-value" id="val-cost-return">₹250</span>
+                            </div>
+                            <input type="range" id="input-cost-return" min="100" max="5000" step="50" value="250" oninput="calculateROI()">
+                        </div>
+                    </div>
+
+                    <!-- Outputs & Analytics -->
+                    <div class="calculator-outputs card-gradient-border">
+                        <h3>Projected Monthly Value Created</h3>
+                        
+                        <div class="output-grid">
+                            <div class="output-box">
+                                <span class="output-lbl">Saved Returns Logistics</span>
+                                <span class="output-val green-text" id="out-returns-savings">₹8,75,000</span>
+                            </div>
+                            <div class="output-box">
+                                <span class="output-lbl">New Conversion Margin (15% lift)</span>
+                                <span class="output-val green-text" id="out-conversion-margin">₹6,75,000</span>
+                            </div>
+                            <div class="output-box">
+                                <span class="output-lbl">Total Value Created</span>
+                                <span class="output-val" id="out-gross-benefit">₹15,50,000</span>
+                            </div>
+                            <div class="output-box">
+                                <span class="output-lbl">GPU Compute Cost (₹8/session)</span>
+                                <span class="output-val red-text" id="out-gpu-cost">₹2,00,000</span>
+                            </div>
+                        </div>
+
+                        <hr class="calc-divider">
+
+                        <div class="net-roi-box">
+                            <span class="net-lbl">Net Monthly Return (ROI)</span>
+                            <span class="net-val" id="out-net-roi">₹13,50,000</span>
+                            <span class="net-annual" id="out-annual-roi">Annual Benefit: ~₹1.62 Cr</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Financial Blueprint Section -->
+        <section id="financial-blueprint" class="section financial-blueprint-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>The Financial Blueprint</h2>
+                    <p>Unit economics that prove SocialStitch AI is a profitable growth lever, not a cost centre.</p>
+                </div>
+
+                <!-- Custom View Toggle -->
+                <div class="blueprint-toggle-container">
+                    <button class="blueprint-toggle-btn active" id="btn-blueprint-us" onclick="toggleBlueprint('us')">
+                        <i class="fa-solid fa-network-wired"></i> Our Business (SaaS Model)
+                    </button>
+                    <button class="blueprint-toggle-btn" id="btn-blueprint-client" onclick="toggleBlueprint('client')">
+                        <i class="fa-solid fa-store"></i> Customer (Fashion Platform)
+                    </button>
+                </div>
+
+                <!-- View 1: Our SaaS Business Economics -->
+                <div id="blueprint-view-us" class="blueprint-view active">
+                    <div class="grid grid-3">
+                        <!-- CAC Card -->
+                        <div class="fin-card card-glass">
+                            <div class="fin-icon-box" style="--fin-color: #ef4444;">
+                                <i class="fa-solid fa-bullseye"></i>
+                            </div>
+                            <h3>Customer Acquisition Cost</h3>
+                            <div class="fin-big-number">₹20,000 <span class="fin-sub">/ merchant</span></div>
+                            <div class="fin-breakdown">
+                                <div class="fin-row"><span>Performance Ads (Meta/Google)</span><span>₹10,000</span></div>
+                                <div class="fin-row"><span>SDR Outbound & Commission</span><span>₹5,000</span></div>
+                                <div class="fin-row"><span>Content Marketing & SEO</span><span>₹3,000</span></div>
+                                <div class="fin-row"><span>Technical Integration Support</span><span>₹2,000</span></div>
+                            </div>
+                            <p class="fin-note">Blended CAC across inbound and outbound channels. Targets growth-stage D2C brands doing ₹10L+ monthly GMV.</p>
+                        </div>
+
+                        <!-- LTV Card -->
+                        <div class="fin-card card-glass">
+                            <div class="fin-icon-box" style="--fin-color: #22c55e;">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <h3>Customer Lifetime Value</h3>
+                            <div class="fin-big-number">₹1,40,400 <span class="fin-sub">/ merchant</span></div>
+                            <div class="fin-breakdown">
+                                <div class="fin-row"><span>Avg. Monthly SaaS Fee</span><span>₹5,000</span></div>
+                                <div class="fin-row"><span>Usage-Based API Revenue</span><span>₹2,500/mo</span></div>
+                                <div class="fin-row"><span>Avg. Retention Period</span><span>24 months</span></div>
+                                <div class="fin-row"><span>Gross Margin</span><span>78%</span></div>
+                            </div>
+                            <p class="fin-note">LTV = (₹5,000 + ₹2,500) × 24 months × 0.78 margin = ₹1,40,400. High retention driven by deeply embedded site integrations.</p>
+                        </div>
+
+                        <!-- LTV:CAC Ratio Card -->
+                        <div class="fin-card card-glass fin-highlight-card">
+                            <div class="fin-icon-box" style="--fin-color: #6366f1;">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                            </div>
+                            <h3>LTV : CAC Ratio</h3>
+                            <div class="fin-big-number ratio-glow">7 : 1</div>
+                            <div class="ratio-bar-container">
+                                <div class="ratio-bar">
+                                    <div class="ratio-fill" style="width: 87.5%;"></div>
+                                </div>
+                                <div class="ratio-labels">
+                                    <span>1:1 <br><small>Break-even</small></span>
+                                    <span>3:1 <br><small>Healthy</small></span>
+                                    <span class="ratio-current">7:1 <br><small>Target</small></span>
+                                </div>
+                            </div>
+                            <p class="fin-note">Industry standard is 3:1. Our 7:1 target highlights high gross margin capture and product-market integration that reduces post-acquisition churn.</p>
+                        </div>
+                    </div>
+
+                    <!-- Payback Period Strip -->
+                    <div class="payback-strip card-glass">
+                        <div class="payback-item">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            <div>
+                                <h4>Payback Period</h4>
+                                <p>~100 Days (~3.4 Months) from merchant integration to full CAC recovery</p>
+                            </div>
+                        </div>
+                        <div class="payback-item">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                            <div>
+                                <h4>Monthly Burn Efficiency</h4>
+                                <p>₹1 spent on acquisition generates ₹7.02 in cumulative gross margin</p>
+                            </div>
+                        </div>
+                        <div class="payback-item">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                            <div>
+                                <h4>Net Revenue Retention</h4>
+                                <p>Target 125% NRR — merchants upgrade as product catalog scales</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View 2: Client E-Commerce Economics -->
+                <div id="blueprint-view-client" class="blueprint-view">
+                    <div class="grid grid-3">
+                        <!-- Client CAC Card -->
+                        <div class="fin-card card-glass">
+                            <div class="fin-icon-box" style="--fin-color: #ef4444;">
+                                <i class="fa-solid fa-user-plus"></i>
+                            </div>
+                            <h3>Customer Acquisition Cost (CAC)</h3>
+                            <div class="fin-big-number">₹380 <span class="fin-sub">/ buyer</span></div>
+                            <div class="fin-breakdown">
+                                <div class="fin-row"><span>Conversion Rate Lift Cost Save</span><span>-₹45</span></div>
+                                <div class="fin-row"><span>Retargeting Efficiency Save</span><span>-₹15</span></div>
+                                <div class="fin-row"><span>Doorstep RTO Logistics Save</span><span>-₹10</span></div>
+                                <div class="fin-row"><span>Baseline Platform CAC</span><span>₹450</span></div>
+                            </div>
+                            <p class="fin-note">Conversion rate boost (1.8% to 2.2%) spreads performance marketing spend across more buyers, lowering blended acquisition cost.</p>
+                        </div>
+
+                        <!-- Client LTV Card -->
+                        <div class="fin-card card-glass">
+                            <div class="fin-icon-box" style="--fin-color: #22c55e;">
+                                <i class="fa-solid fa-wallet"></i>
+                            </div>
+                            <h3>Customer Lifetime Value (LTV)</h3>
+                            <div class="fin-big-number">₹3,750 <span class="fin-sub">/ buyer</span></div>
+                            <div class="fin-breakdown">
+                                <div class="fin-row"><span>Reduced Sizing Return Losses</span><span>+₹450</span></div>
+                                <div class="fin-row"><span>Repeat Purchase Frequency Lift</span><span>+₹200</span></div>
+                                <div class="fin-row"><span>Reduced Reverse Courier Spend</span><span>+₹100</span></div>
+                                <div class="fin-row"><span>Baseline Customer LTV</span><span>₹3,000</span></div>
+                            </div>
+                            <p class="fin-note">Fit check confidence reduces returns and triggers size-related reorders, drastically increasing lifetime loyalty.</p>
+                        </div>
+
+                        <!-- Client LTV:CAC Ratio Card -->
+                        <div class="fin-card card-glass fin-highlight-card">
+                            <div class="fin-icon-box" style="--fin-color: #6366f1;">
+                                <i class="fa-solid fa-gauge-high"></i>
+                            </div>
+                            <h3>LTV : CAC Ratio</h3>
+                            <div class="fin-big-number ratio-glow" style="color: #22c55e; text-shadow: 0 0 15px rgba(34, 197, 94, 0.4);">9.8 : 1</div>
+                            <div class="ratio-bar-container">
+                                <div class="ratio-bar">
+                                    <div class="ratio-fill" style="width: 98%; background: linear-gradient(to right, #f59e0b, #22c55e);"></div>
+                                </div>
+                                <div class="ratio-labels">
+                                    <span>3:1 <br><small>Healthy</small></span>
+                                    <span>6.6:1 <br><small>Baseline</small></span>
+                                    <span class="ratio-current" style="color: #22c55e;">9.8:1 <br><small>With VFC</small></span>
+                                </div>
+                            </div>
+                            <p class="fin-note">Integrating SocialStitch elevates customer health metrics from 6.6:1 to 9.8:1, maximizing the return on marketing spend.</p>
+                        </div>
+                    </div>
+
+                    <!-- Client Payback Strip -->
+                    <div class="payback-strip card-glass">
+                        <div class="payback-item">
+                            <i class="fa-solid fa-bolt"></i>
+                            <div>
+                                <h4>Instant Payback</h4>
+                                <p>~15 Days to recover monthly SaaS fee from return shipping savings</p>
+                            </div>
+                        </div>
+                        <div class="payback-item">
+                            <i class="fa-solid fa-arrow-up-right-dots"></i>
+                            <div>
+                                <h4>Return on Software Spend</h4>
+                                <p>₹1 spent on SocialStitch returns ₹12 in saved reverse logistics and rescued margins</p>
+                            </div>
+                        </div>
+                        <div class="payback-item">
+                            <i class="fa-solid fa-face-smile"></i>
+                            <div>
+                                <h4>Buyer Loyalty</h4>
+                                <p>95% retention rate of buyers — eliminating sizing friction keeps buyers loyal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- India Market Impact Section -->
+        <section id="india-impact" class="section india-impact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>India Market Impact: Back-of-Envelope Savings</h2>
+                    <p>How SocialStitch AI can transform returns for India's largest fashion e-commerce platforms — calculated from publicly reported order volumes and RTO rates.</p>
+                </div>
+
+                <!-- India Stats Hero -->
+                <div class="india-stat-strip">
+                    <div class="india-stat">
+                        <h3>₹1.2 Lakh Cr</h3>
+                        <p>India Fashion E-Commerce GMV (FY26)</p>
+                    </div>
+                    <div class="india-stat">
+                        <h3>25-40%</h3>
+                        <p>Average COD/RTO Rate</p>
+                    </div>
+                    <div class="india-stat">
+                        <h3>₹14,000 Cr</h3>
+                        <p>Annual Reverse Logistics Cost</p>
+                    </div>
+                </div>
+
+                <!-- Brand-wise Impact Cards -->
+                <div class="grid grid-3 india-brand-grid">
+                    <!-- Myntra -->
+                    <div class="india-brand-card card-gradient-border">
+                        <div class="brand-header">
+                            <div class="brand-logo-circle" style="background: linear-gradient(135deg, #ff3f6c, #ff6f91);">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </div>
+                            <div>
+                                <h3>Myntra</h3>
+                                <span class="brand-subtitle">Flipkart Group • ~5 Cr orders/month</span>
+                            </div>
+                        </div>
+                        <div class="brand-calc">
+                            <div class="calc-row"><span>Monthly Orders</span><span class="calc-val">5,00,00,000</span></div>
+                            <div class="calc-row"><span>Avg. AOV</span><span class="calc-val">₹1,200</span></div>
+                            <div class="calc-row"><span>Current Return Rate</span><span class="calc-val red-text">28%</span></div>
+                            <div class="calc-row"><span>Logistics Cost per Return</span><span class="calc-val">₹175</span></div>
+                            <div class="calc-row highlight-row"><span>Monthly Return Logistics Spend</span><span class="calc-val">₹245 Cr</span></div>
+                        </div>
+                        <div class="brand-savings">
+                            <div class="savings-label">With 25% Return Reduction via VFC</div>
+                            <div class="savings-amount">₹61.25 Cr <span>saved/month</span></div>
+                            <div class="savings-annual">Annual Savings: <strong>₹735 Cr</strong></div>
+                        </div>
+                        <div class="brand-implementation">
+                            <h5><i class="fa-solid fa-plug"></i> Implementation Path</h5>
+                            <ul>
+                                <li>Embed VFC widget as a React micro-frontend inside existing PDP</li>
+                                <li>Feed garment specs via Myntra's internal catalogue API</li>
+                                <li>A/B test on top 200 high-return SKUs first</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Ajio -->
+                    <div class="india-brand-card card-gradient-border">
+                        <div class="brand-header">
+                            <div class="brand-logo-circle" style="background: linear-gradient(135deg, #4a90d9, #7b68ee);">
+                                <i class="fa-solid fa-shirt"></i>
+                            </div>
+                            <div>
+                                <h3>Ajio</h3>
+                                <span class="brand-subtitle">Reliance Retail • ~1.5 Cr orders/month</span>
+                            </div>
+                        </div>
+                        <div class="brand-calc">
+                            <div class="calc-row"><span>Monthly Orders</span><span class="calc-val">1,50,00,000</span></div>
+                            <div class="calc-row"><span>Avg. AOV</span><span class="calc-val">₹1,450</span></div>
+                            <div class="calc-row"><span>Current Return Rate</span><span class="calc-val red-text">32%</span></div>
+                            <div class="calc-row"><span>Logistics Cost per Return</span><span class="calc-val">₹200</span></div>
+                            <div class="calc-row highlight-row"><span>Monthly Return Logistics Spend</span><span class="calc-val">₹96 Cr</span></div>
+                        </div>
+                        <div class="brand-savings">
+                            <div class="savings-label">With 25% Return Reduction via VFC</div>
+                            <div class="savings-amount">₹24 Cr <span>saved/month</span></div>
+                            <div class="savings-annual">Annual Savings: <strong>₹288 Cr</strong></div>
+                        </div>
+                        <div class="brand-implementation">
+                            <h5><i class="fa-solid fa-plug"></i> Implementation Path</h5>
+                            <ul>
+                                <li>Integrate via headless SDK into Ajio's custom frontend stack</li>
+                                <li>Leverage Ajio's in-house private label data for garment specs</li>
+                                <li>Pilot on Ajio Luxe premium segment (higher AOV = higher impact)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Meesho -->
+                    <div class="india-brand-card card-gradient-border">
+                        <div class="brand-header">
+                            <div class="brand-logo-circle" style="background: linear-gradient(135deg, #e91e63, #ff5722);">
+                                <i class="fa-solid fa-store"></i>
+                            </div>
+                            <div>
+                                <h3>Meesho</h3>
+                                <span class="brand-subtitle">Tier 2-3 India • ~4 Cr orders/month</span>
+                            </div>
+                        </div>
+                        <div class="brand-calc">
+                            <div class="calc-row"><span>Monthly Orders</span><span class="calc-val">4,00,00,000</span></div>
+                            <div class="calc-row"><span>Avg. AOV</span><span class="calc-val">₹450</span></div>
+                            <div class="calc-row"><span>Current COD/RTO Rate</span><span class="calc-val red-text">38%</span></div>
+                            <div class="calc-row"><span>Logistics Cost per RTO</span><span class="calc-val">₹120</span></div>
+                            <div class="calc-row highlight-row"><span>Monthly RTO Logistics Burn</span><span class="calc-val">₹182 Cr</span></div>
+                        </div>
+                        <div class="brand-savings">
+                            <div class="savings-label">With 25% RTO Reduction via VFC</div>
+                            <div class="savings-amount">₹45.6 Cr <span>saved/month</span></div>
+                            <div class="savings-annual">Annual Savings: <strong>₹547 Cr</strong></div>
+                        </div>
+                        <div class="brand-implementation">
+                            <h5><i class="fa-solid fa-plug"></i> Implementation Path</h5>
+                            <ul>
+                                <li>Deploy as lightweight JS widget (Meesho's app-first, low-bandwidth users)</li>
+                                <li>Focus on unbranded sellers — standardise sizing via VFC parametric engine</li>
+                                <li>Tie VFC confidence score to COD eligibility (high fit score = COD allowed)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Total Impact Summary -->
+                <div class="india-total-strip card-glass">
+                    <div class="total-header">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                        <h3>Combined Annual Savings Potential (Top 3 Platforms)</h3>
+                    </div>
+                    <div class="total-numbers">
+                        <div class="total-item">
+                            <span class="total-big">₹1,570 Cr</span>
+                            <span class="total-sub">Reverse Logistics Savings</span>
+                        </div>
+                        <div class="total-divider"></div>
+                        <div class="total-item">
+                            <span class="total-big">₹2,400 Cr</span>
+                            <span class="total-sub">Revenue Recovered (unsold returns → kept orders)</span>
+                        </div>
+                        <div class="total-divider"></div>
+                        <div class="total-item">
+                            <span class="total-big green-text">₹3,970 Cr</span>
+                            <span class="total-sub">Total Annual Value Created</span>
+                        </div>
+                    </div>
+                    <p class="total-footnote">* Back-of-envelope estimates based on publicly reported order volumes (FY25-26), industry-standard logistics cost benchmarks, and a conservative 25% return reduction assumption from VFC deployment.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Execution Roadmap Section -->
+        <section id="roadmap" class="section roadmap-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>100-Day Launch Roadmap</h2>
+                    <p>The operational timeline to take SocialStitch AI from contract to production deployment.</p>
+                </div>
+
+                <div class="roadmap-timeline">
+                    <div class="roadmap-step">
+                        <div class="step-num">01</div>
+                        <div class="step-content">
+                            <h4>Discovery & Setup (Days 1 - 20)</h4>
+                            <p>Finalize Product Requirements Documents (PRDs), align stack parameters, integrate merchant API credentials, and run "Wizard of Oz" prototyping to confirm customer behavior.</p>
+                        </div>
+                    </div>
+                    <div class="roadmap-step">
+                        <div class="step-num">02</div>
+                        <div class="step-content">
+                            <h4>The VFC Engine integration (Days 21 - 60)</h4>
+                            <p>Configure the SMPL statistical models, calibrate fabric tension constants for key collections, and set up predictive edge-pre-fetching caching systems for zero latency.</p>
+                        </div>
+                    </div>
+                    <div class="roadmap-step">
+                        <div class="step-num">03</div>
+                        <div class="step-content">
+                            <h4>SocialStitch AI & UGC (Days 61 - 80)</h4>
+                            <p>Integrate stable diffusion models, train brand LoRAs to align visual assets, and program the React Native / Web front-end carousel components.</p>
+                        </div>
+                    </div>
+                    <div class="roadmap-step">
+                        <div class="step-num">04</div>
+                        <div class="step-content">
+                            <h4>Beta Soft Launch (Days 81 - 100)</h4>
+                            <p>Rollout the feature to the top 10% of retailer loyalty base, optimize background image-rendering latencies under 4 seconds, and measure final baseline KPIs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-brand">
+                <span class="logo-icon"><i class="fa-solid fa-scissors"></i></span>
+                <h4>SocialStitch AI</h4>
+            </div>
+            <p class="footer-credit"><strong>The VFC Case Study</strong> &mdash; Crafted by <strong>Surya Prakash Gupta</strong></p>
+            <p class="footer-collab">Let's collab to work on this! Connect with me:</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/surya-gupta-rasoirasta" target="_blank" class="social-link-btn">
+                    <i class="fa-brands fa-linkedin"></i> linkedin.com/in/surya-gupta-rasoirasta
+                </a>
+            </div>
+            <p class="footer-copy">&copy; 2026 SocialStitch AI. All rights reserved. Transforming fashion returns into net revenue.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Drawer Modal -->
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h4>Shopping Bag</h4>
+            <button onclick="toggleCart()"><i class="fa-solid fa-times"></i></button>
+        </div>
+        <div class="cart-body">
+            <div class="cart-item">
+                <div class="cart-item-details">
+                    <h5 id="cart-product-title">Slim-Fit Dress</h5>
+                    <p id="cart-item-desc">Size: Medium (Selected via SocialStitch Fit Check)</p>
+                    <p class="cart-item-price" id="cart-product-price">₹9,999</p>
+                </div>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <button class="btn btn-primary btn-block">Proceed to Secure Checkout</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+
+    <!-- Alert Toast System -->
+    <div class="toast" id="toast">
+        <span id="toast-message">Item added to bag!</span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
