@@ -2049,6 +2049,19 @@ input[type=range]::-webkit-slider-thumb:hover {
     .payback-strip {
         padding: 1.2rem !important;
     }
+    .persona-tabs {
+        flex-direction: column;
+        gap: 0.5rem;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    .tab-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    .toast, .toast.active {
+        display: none !important;
+    }
 }
 
 @media (max-width: 480px) {
